@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+        <p>creating and using an objeck method </p>
+        <p>a method is actually a function definition stored as a property value</p>
+        <p id="demo"></p>
+        <script>
+        var person = {
+                firstname : "john",
+                lastname : "doe",
+                age : "34",
+                eyecolor : "blue",
+               
+            };
+            person.name = function(){
+                return this.firstname + " " + this.lastname;
+            };
+            document.getElementById("demo").innerHTML = "my Father " + person.name();  
+        </script>
+    
+</body>
+</html>

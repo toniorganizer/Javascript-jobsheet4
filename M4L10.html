@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>javascript setter and getter</h3>
+    <p>getter and setter allow you to get and set properties via methods</p>
+    <p>this example uses a lang property to set the language property </p>
+    <p id="demo"></p>
+
+    <script>
+    var person = {
+        firstname : "john",
+        lastname : "doe",
+        age : "34",
+        eyecolor : "blue",
+        get lang(){
+           return this.eyecolor.toUpperCase();
+        }
+    };
+
+    document.getElementById("demo").innerHTML = person.lang;
+    </script>
+</body>
+</html>
